@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Your Frame Title</title>
+
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://i.imgur.com/5LMzFZk.jpeg" />
+  <meta property="fc:frame:image:aspect_ratio" content="1.91:1" />  <meta property="og:image" content="https://i.imgur.com/5LMzFZk.jpeg" />
+
+  <meta property="fc:frame:button:1" content="Reveal the Truth" />
+  <meta property="fc:frame:button:1:type" content="post" />  <style>
+    /* Basic styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .container img {
+      max-width: 100%;
+      height: auto;
+    }
+    .hidden {
+      display: none;
+    }
+    .visible {
+      display: block;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello Warpcast</h1>
+    <p>This is a basic frame example to be embedded in Warpcast.</p>
+    <img id="image1" src="https://i.imgur.com/5LMzFZk.jpeg" alt="What you think you are">
+    <p id="text1">What you think you are</p>
+
+    <img id="image2" class="hidden" src="https://i.imgur.com/arTAH6r.jpeg" alt="What you really are">
+    <p id="text2" class="hidden">What you really are</p>
+
+  </div>
+
+  <script>
+    function showRealSelf() {
+      // You can potentially add form validation here (optional)
+
+      // Submit the form data (assuming post action)
+      document.forms[0].submit();  // Assuming you have a form element
+    }
+  </script>
+</body>
+</html>
